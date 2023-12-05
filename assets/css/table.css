@@ -1,0 +1,64 @@
+/* Estilos Generales */
+html, body, .intro {
+  height: 100%;
+}
+
+/* Estilos para la Tabla */
+.table-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 8px;
+}
+
+/* Estilos específicos para la tercera celda */
+table td:nth-child(3),
+table th:nth-child(3) {
+  white-space: normal;
+}
+
+/* Estilos para Encabezados de Tabla */
+thead th {
+  color: #fff;
+  background-color: #d9534f; /* Rojo no tan oscuro para los encabezados */
+}
+
+/* Estilos para Tarjetas */
+.card {
+  border-radius: .5rem;
+}
+
+/* Estilos para Tabla Desplazable */
+.table-scroll {
+  border-radius: .5rem;
+}
+
+.table-scroll table thead th {
+  font-size: 1.25rem;
+}
+
+/* Encabezado de Tabla Pegajoso */
+thead {
+  top: 0;
+  position: sticky;
+}
+
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ac2925; /* Rojo más claro para la barra de desplazamiento */
+}
